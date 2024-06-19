@@ -1,0 +1,30 @@
+.w-500-px {
+    width: 100%;
+}
+
+.card1 {
+    background-color: #e7dadd;
+}
+
+.card2 {
+    background-color: rgb(187, 228, 228);
+}
+
+.card3 {
+    background-color: rgb(200, 248, 200);
+}
+
+.card4 {
+    background-color: #edf3fd;
+}
+
+.service {
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+.list-group-item:hover {
+    color: white;
+    background-color: black;
+}

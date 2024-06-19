@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="./Register.css" rel="stylesheet">
+    <script src="./register.js" defer></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main_content card">
+
+            <div class="row ">
+                <div class="col-md-6 col-sm-12">
+                    <img src="../left-content.jpg" class="bg_img">
+                </div>
+                <div class="col-md-6 col-sm-12 right_container">
+
+                    <div class="d-flex justify-content-center">
+                        <div class="icon_container">
+                            <i class="fa fa-user user_icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+
+                        <p class="heading">User Management Register</p>
+                    </div>
+                    <p id="global_error"></p>
+                    <div class="d-flex justify-content-center">
+                        <p class="sub_title text-center">This is a user management system. Here you can just use
+                            this page to register</p>
+                    </div>
+
+                    <div class="form_container">
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_first_name" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="register_first_name"
+                                            placeholder="Enter your first name">
+                                        <div id="register_first_name_error" class="text-danger"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_last_name" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="register_last_name"
+                                            placeholder="Enter your last name">
+                                        <div id="register_last_name_error" class="text-danger"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="register_email"
+                                            placeholder="Enter your email">
+                                        <div id="email_address_error" class="text-danger"></div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_phone" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="register_phone"
+                                            placeholder="Enter your phone number">
+                                        <div id="register_phone_number_error" class="text-danger"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="register_password"
+                                            placeholder="Enter your password">
+                                        <div id="register_password_error" class="text-danger"></div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="register_confirm_password" class="form-label">Confirm
+                                            Password</label>
+                                        <input type="password" class="form-control" id="register_confirm_password"
+                                            placeholder="Enter your confirm password">
+                                        <div id="register_confirm_password_error" class="text-danger"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between ">
+                                <div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="agree">
+                                        <label class="form-check-label" for="agree">
+                                            I agree <span><a class="text-link">Terms and Conditions</a></span>
+                                        </label>
+                                        <div id="agree_error" class="text-danger"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt_3">
+                                <button type="button" class="btn btn-primary w-100 mb-3"
+                                    onclick="validateAndRegister()">Register</button>
+                                <button type="reset" class="btn btn-outline-danger w-100" id="clear_btn">Clear</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-link" onclick="navigateToLogin()">Already have an
+                                    account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
